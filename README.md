@@ -275,7 +275,7 @@ reading is unavailable.
 | NOT SAVED or UNSAVED | Download succeeded but persistence failed. Check device free space and that `/state` is writable. Back up `/state/hf-propagation.json` and its `.bak` before attempting state recovery. |
 | Buttons temporarily unresponsive during refresh | Network operations can block during the per-feed budget (8 seconds by default); system DNS resolution is outside that budget. Down cancellation is handled during Wi-Fi connection and between requests. |
 | No scheduled refresh while another app is open | Scheduling runs only while HF Propagation is active. Home and the callsign shortcut clear its alarm. Keep Wi-Fi reachable; physical RTC wake/sleep still needs hardware verification. |
-| Long-Down shortcut does not open the badge | Install the separate KK4TSS app at `apps/kk4tss`. Hold Down on current conditions for 0.8 seconds, then release. The shortcut is inactive on B/C. |
+| Long-Down shortcut does not open the badge | Install the separate Callsign Badger app at `apps/callsign_badger`. Hold Down on current conditions for 0.8 seconds, then release. The shortcut is inactive on B/C. |
 | Battery icon shows a dash | The badge battery API did not supply a reading. Check firmware compatibility; the last e-paper reading also remains visible during sleep. |
 
 If the problem persists, open a **Bug report** under Issues with the app version,
